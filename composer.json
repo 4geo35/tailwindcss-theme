@@ -1,0 +1,29 @@
+{
+    "name": "4geo35/tailwindcss-theme",
+    "description": "Based on TailwindCSS and Livewire theme for laravel",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^11.0",
+        "livewire/livewire": "^3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "GIS\\TailwindcssTheme\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladimir",
+            "email": "aweram-team@yandex.ru"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GIS\\TailwindcssTheme\\TailwindcssThemeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

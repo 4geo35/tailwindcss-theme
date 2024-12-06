@@ -1,0 +1,212 @@
+:root {
+    /* Colors */
+    --color-light: 245, 245, 245; /* #F5F5F5 */
+    --color-light-darken: 228, 228, 228; /* #E4E4E4 */
+    --color-light-hover: 228, 228, 228; /* #E4E4E4 */
+
+    --color-dark: 94, 88, 115; /* #5E5873 */
+    --color-dark-darken: 68, 61, 89; /* #443D59 */
+    --color-dark-lighten: 130, 123, 156; /* #827B9C */
+    --color-dark-hover: 68, 61, 89; /* #443D59 */
+
+    --color-success: 40, 169, 146; /* #28A992 */
+    --color-success-darken: 33, 142, 123; /* #218E7B */
+    --color-success-lighten: 29, 203, 172; /* #1DCBAC */
+    --color-success-hover: 33, 142, 123; /* #218E7B */
+
+    --color-danger: 224, 31, 39; /* #E01F27 */
+    --color-danger-darken: 199, 18, 26; /* #C7121A */
+    --color-danger-lighten: 255, 108, 114; /* #FF6C72 */
+    --color-danger-hover: 199, 18, 26; /* #C7121A */
+
+    --color-warning: 247, 150, 30; /* #F7961E */
+    --color-warning-darken: 217, 126, 14; /* #D97E0E */
+    --color-warning-lighten: 249, 180, 95; /* #F9B45F */
+    --color-warning-hover: 217, 126, 14; /* #D97E0E */
+
+    --color-info: 128, 159, 255; /* #809FFF */
+    --color-info-darken: 80, 123, 255; /* #507BFF */
+    --color-info-lighten: 170, 191, 255; /* #AABFFF */
+    --color-info-hover: 80, 123, 255; /* #507BFF */
+
+    --color-primary: 0, 31, 125; /* #001F7D */
+    --color-primary-darken: 0, 23, 91; /* #00175B */
+    --color-primary-lighten: 49, 79, 169; /* #314FA9 */
+    --color-primary-hover: 0, 23, 91; /* #00175B */
+
+    --color-secondary: 187, 184, 199; /* #BBB8C7 */
+    --color-secondary-darken: 139, 137, 148; /* #8B8994 */
+    --color-secondary-hover: 139, 137, 148; /* #8B8994 */
+
+    --color-body: var(--color-dark); /* Еще передается вручную в svg для form-select */
+    --color-body-bg: var(--color-light);
+    --scrollbar-color: rgba(var(--color-secondary), 1);
+
+    /* Sizes */
+    --indent-width: 1.5rem; /* 24px */
+    --indent-xs: .625rem; /* 10px */
+    --indent-sm: 1rem; /* 16px */
+    --indent-lg: 2rem; /* 32px */
+    --indent-half: calc(var(--indent-width) / 2); /* 12px */
+    --indent-double: calc(var(--indent-width) * 2); /* 48px */
+
+    --border-width: 1px;
+    --border-radius: .625rem; /* 10px */
+    --spacer: var(--indent-sm); /* 16px */
+
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-admin-menu-backdrop: 1040;
+    --z-admin-menu: 1045;
+    --z-modal-backdrop: 1050;
+    --z-modal: 1055;
+
+    /* Modal */
+    --modal-bg: 255, 255, 255;
+    --modal-backdrop-bg: var(--color-dark);
+    --modal-backdrop-opacity: .5;
+
+    --modal-border-width: var(--border-width);
+    --modal-border-color: transparent;
+    --modal-border-radius: var(--border-radius);
+    --modal-inner-border-radius: calc(var(--modal-border-radius) - var(--modal-border-width));
+
+    --modal-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+    --modal-aside-width: 420px;
+
+    /* Dropdown */
+    --dropdown-min-width: 10rem;
+    --dropdown-padding-x: 0;
+    --dropdown-padding-y: .5rem;
+    --dropdown-font-size: 1rem;
+    --dropdown-color: var(--color-body);
+    --dropdown-bg: #fff;
+
+    --dropdown-border-width: var(--border-width);
+    --dropdown-border-color: var(--color-secondary);
+    --dropdown-border-radius: var(--border-radius);
+
+    /* Menu and Navigation */
+    --auth-form: 342px;
+    --menu-length: 260px;
+
+    --navigation-font-size: 1rem;
+    --navigation-line-height: 1.5rem;
+
+    /* Cards */
+    --card-border-width: var(--border-width);
+    --card-border-color: var(--color-secondary);
+    --card-border-radius: var(--border-radius);
+    --card-inner-border-radius: calc(var(--card-border-radius) - var(--card-border-width));
+    --card-spacer-y: var(--spacer);
+    --card-spacer-x: var(--spacer);
+    --card-title-spacer-y: calc(var(--spacer) * .5);
+    --card-text-spacer-y: var(--spacer);
+    --card-cap-padding-y: calc(var(--card-spacer-y) * .5);
+    --card-cap-padding-x: var(--card-spacer-x);
+
+    --card-bg: 255, 255, 255;
+    --card-color: var(--color-body);
+    --card-title-color: var(--color-body);
+    --card-subtitle-color: var(--color-body);
+    --card-cap-color: var(--color-body);
+    --card-cap-bg: rgba(var(--color-light), 1);
+
+    --card-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+    /* Table */
+    --table-cell-padding-x: var(--indent-width);
+    --table-cell-padding-y: var(--spacer);
+    --table-border-width: var(--border-width);
+
+    --table-head-font-weight: 500;
+
+    --table-border-color: rgba(var(--color-secondary), .4);
+    --table-bg: 255, 255, 255;
+    --table-head-bg: rgba(var(--color-light), 1);
+
+    /* Forms */
+    --input-height: 2.5rem; /* 40px */
+    --input-height-sm: 1.875rem; /* 30px */
+    --input-height-lg: 3rem; /* 48px */
+
+    --input-padding-x: .75rem; /* 12px */
+    --input-padding-x-sm: .625rem; /* 10px */
+    --input-padding-x-lg: 1rem; /* 16px */
+    --input-textarea-padding-y: .563rem; /* 9px */
+    --input-textarea-padding-y-sm: .438rem; /* 7px */
+    --input-textarea-padding-y-lg: .563rem; /* 9px */
+    --input-file-padding-fix: 3px;
+    --select-indicator-padding: calc(var(--input-padding-x) * 3);
+
+    --input-font-size: .875rem; /* 14px */
+    --input-font-size-sm: .75rem; /* 12px */
+    --input-font-size-lg: 1.125rem; /* 18px */
+
+    --input-line-height: 1.25rem; /* 20px */
+    --input-line-height-sm: 1rem; /* 16px */
+    --input-line-height-lg: 1.75rem; /* 28px */
+
+    --input-font-weight: 400;
+
+    --input-border-width: var(--border-width);
+    --input-border-radius: var(--border-radius);
+
+    --input-color: var(--color-body);
+    --input-bg: 255, 255, 255; /* FFF */
+    --input-border-color: var(--color-secondary);
+    --input-focus-bg: var(--input-bg);
+    --input-focus-border-color: var(--color-primary);
+    --input-placeholder-color: var(--color-secondary);
+    --input-disabled-bg: 233, 236, 239; /* #e9ecef */
+
+    --select-indicator-color: var(--color-body);
+    --select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='rgb(94, 88, 115)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+    --select-indicator-position: right var(--input-padding-x) center;
+    --select-indicator-size: 16px 12px;
+
+    --check-input-width: 1em;
+    --check-input-mt: -.1em;
+    --check-input-border-radius: .25em;
+    --check-radio-border-radius: 50%;
+    --check-active-filter: brightness(90%);
+    --check-checked-bg-color: var(--input-focus-border-color);
+    --check-checked-border-color: var(--check-checked-bg-color);
+    --check-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+    --check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='rgb(255, 255, 255)'/></svg>");
+    --check-disabled-opacity: .5;
+    --check-label-ml: .5em;
+
+    --input-transition: "border-color .15s ease-in-out, box-shadow .15s ease-in-out";
+
+    /* Buttons */
+    --btn-height: var(--input-height); /* 40px */
+    --btn-height-sm: var(--input-height-sm); /* 30px */
+    --btn-height-lg: var(--input-height-lg); /* 48px */
+
+    --btn-padding-x: 1.5rem; /* 24px */
+    --btn-padding-x-sm: 1rem; /* 16px */
+    --btn-padding-x-lg: 2rem; /* 32px */
+    --btn-padding-x-ico: .625rem; /* 10px */
+
+    --btn-font-size: var(--input-font-size); /* 14px */
+    --btn-font-size-sm: var(--input-font-size-sm); /* 12px */
+    --btn-font-size-lg: var(--input-font-size-lg); /* 18px */
+
+    --btn-line-height: var(--input-line-height); /* 20px */
+    --btn-line-height-sm: var(--input-line-height-sm); /* 16px */
+    --btn-line-height-lg: var(--input-line-height-lg); /* 28px */
+
+    --btn-font-weight: 500;
+
+    --btn-letter-spacing: 0.1em;
+
+    --btn-border-width: var(--input-border-width);
+    --btn-border-radius: var(--input-border-radius); /* 10px */
+
+    --btn-ico-text-space: .625rem; /* 10px */
+
+    --btn-transition: "color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out";
+}
