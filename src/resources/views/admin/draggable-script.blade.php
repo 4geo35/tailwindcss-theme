@@ -10,7 +10,6 @@
 
             function makeDraggable() {
                 let root = document.querySelector("[drag-root]")
-                console.log(root.querySelectorAll("[drag-grab]"))
 
                 root.querySelectorAll("[drag-grab]").forEach(el => {
                     el.mouseover = null
