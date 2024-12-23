@@ -1,8 +1,8 @@
-@props(['name' => ''])
+@props(['name' => '', 'active' => 'bg-secondary/20', 'passive' => 'bg-white'])
 <li>
-    <button type="button" class="w-full px-indent py-indent-half text-left hover:bg-secondary/20 text-nowrap mb-2.5"
+    <button type="button" {{ $attributes->merge(['class' => 'w-full']) }}
             @click="show = '{{ $name }}'"
-            :class="{ 'bg-secondary/20': show === '{{ $name }}', 'bg-white': show !== '{{ $name }}' }">
+            :class="{ '{{ $active }}': show === '{{ $name }}', '{{ $passive }}': show !== '{{ $name }}' }">
         {{ $slot }}
     </button>
 </li>

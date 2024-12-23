@@ -23,6 +23,7 @@
 
     {{-- Favico --}}
     <link rel="shortcut icon" href="{{ asset("favicon.ico") }}" type="image/x-icon">
+    @stack("js-lib")
     @include("tt::layouts.includes.over-css")
     <!-- CSS -->
     @livewireStyles
