@@ -26,6 +26,7 @@
 
     --color-body: 33, 37, 41; /* #212529 */ /* Еще передается вручную в svg для form-select */
     --color-body-bg: var(--color-light);
+    --stroke: rgba(var(--color-secondary), 1);
     --scrollbar-color: rgba(var(--color-secondary), 1);
 
     /* Sizes */

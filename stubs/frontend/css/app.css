@@ -1,7 +1,20 @@
 @import url('https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap');
 @import "./app/_variables.css";
+@import "tailwindcss";
 
 @config "../../tailwind.config.js";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@theme {
+    --breakpoint-xs: 30rem; /* => @media (min-width: 480px) {...} */
+}
+
+@utility container {
+    padding-inline: .75rem; /* 12px */
+    margin-inline: auto;
+
+    @variant sm {  padding-inline: 3.125rem; /* 50px */  }
+    @variant md {  padding-inline: 2.25rem; /* 36px */  }
+    @variant lg {  padding-inline: 2.75rem; /* 44px */  }
+    @variant xl {  padding-inline: 3.25rem; /* 52px */  }
+    @variant 2xl {  padding-inline: 3rem; /* 64px */  }
+}
