@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
-if (config("tailwindcss-theme.showStylesPage") && config("app.debug")) {
+if (config("tailwindcss-theme.showStylesPage")) {
     Route::group([
         'middleware' => ['web']
     ], function () {
