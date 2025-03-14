@@ -134,7 +134,8 @@
 
     --input-color: var(--color-body);
     --input-bg: 255, 255, 255; /* FFF */
-    --input-border-color: var(--color-secondary);
+    /*--input-border-color: var(--color-secondary);*/
+    --input-border-color: 224, 224, 224; /* #E0E0E0 */
     --input-focus-bg: var(--input-bg);
     --input-focus-border-color: var(--color-primary);
     --input-placeholder-color: var(--color-secondary);
