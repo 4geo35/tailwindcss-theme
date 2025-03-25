@@ -119,8 +119,8 @@
     --input-file-padding-fix: 3px;
     --select-indicator-padding: calc(var(--input-padding-x) * 3);
 
-    --input-font-size: .875rem; /* 14px */
-    --input-font-size-sm: .75rem; /* 12px */
+    --input-font-size: 1rem; /* 16px */
+    --input-font-size-sm: .875rem; /* 14px */
     --input-font-size-lg: 1.125rem; /* 18px */
 
     --input-line-height: 1.25rem; /* 20px */
@@ -170,8 +170,8 @@
     --btn-padding-x-lg: 2rem; /* 32px */
     --btn-padding-x-ico: .625rem; /* 10px */
 
-    --btn-font-size: var(--input-font-size); /* 14px */
-    --btn-font-size-sm: var(--input-font-size-sm); /* 12px */
+    --btn-font-size: var(--input-font-size); /* 16px */
+    --btn-font-size-sm: var(--input-font-size-sm); /* 14px */
     --btn-font-size-lg: var(--input-font-size-lg); /* 18px */
 
     --btn-line-height: var(--input-line-height); /* 20px */
@@ -180,7 +180,7 @@
 
     --btn-font-weight: 500;
 
-    --btn-letter-spacing: 0.1em;
+    --btn-letter-spacing: 0;
 
     --btn-border-width: var(--input-border-width);
     --btn-border-radius: var(--input-border-radius); /* 10px */

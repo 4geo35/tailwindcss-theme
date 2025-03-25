@@ -78,6 +78,12 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
                 __DIR__ . "/../stubs/frontend/js" => resource_path("js")
             ], "frontend");
 
+            // Публикация переменных
+            $this->publishes([
+                __DIR__ . "/../stubs/frontend/css/admin" => resource_path("css/admin"),
+                __DIR__ . "/../stubs/frontend/css/app" => resource_path("css/app"),
+            ], "variables");
+
             // Публикация изображений
             $this->publishes([
                 __DIR__ . "/imgs" => public_path("imgs/gis"),
