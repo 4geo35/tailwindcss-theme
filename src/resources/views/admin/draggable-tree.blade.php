@@ -17,7 +17,9 @@
 
                 <div class="flex items-center justify-start ml-indent">
                     <button type="button" class="btn btn-success btn-sm px-btn-x-ico rounded-e-none"
-                            wire:loading.attr="disabled"
+                            @can("create", $item["model"]::class) wire:loading.attr="disabled"
+                            @else disabled
+                            @endcan
                             wire:click="showCreate({{ $item['id'] }})">
                         <x-tt::ico.circle-plus />
                     </button>
@@ -25,21 +27,39 @@
                        class="btn btn-primary btn-sm px-btn-x-ico rounded-none">
                         <x-tt::ico.eye width="18" height="18" />
                     </a>
-                    @if (isset($item["imageUrl"]) && $item["imageUrl"])
+                    @if (key_exists("imageUrl", $item) && $item["imageUrl"])
                         <a href="{{ $item["imageUrl"] }}" class="btn btn-primary btn-sm px-btn-x-ico rounded-none" target="_blank">
                             <x-tt::ico.image width="18" height="18" />
                         </a>
                     @endif
                     <button type="button" class="btn btn-dark btn-sm px-btn-x-ico rounded-none"
-                            wire:loading.attr="disabled"
+                            @can("update", $item["model"]) wire:loading.attr="disabled"
+                            @else disabled
+                            @endcan
                             wire:click="showEdit({{ $item['id'] }})">
                         <x-tt::ico.edit />
                     </button>
                     <button type="button" class="btn btn-danger btn-sm px-btn-x-ico rounded-s-none"
                             wire:click="showDelete({{ $item['id'] }})"
-                            @if(! empty($item['children'])) disabled @else wire:loading.attr="disabled" @endif>
+                            @can("delete", $item["model"]) @if(! empty($item['children'])) disabled @else wire:loading.attr="disabled" @endif
+                            @else disabled
+                            @endcan>
                         <x-tt::ico.trash />
                     </button>
+                    @if (key_exists("published_at", $item))
+                        <button type="button"
+                                class="btn {{ $item["published_at"] ? 'btn-success' : 'btn-danger' }} btn-sm px-btn-x-ico ml-2"
+                                @can("update", $item["model"]) wire:loading.attr="disabled"
+                                @else disabled
+                                @endcan
+                                wire:click="switchPublish({{ $item["id"] }})">
+                            @if ($item["published_at"])
+                                <x-tt::ico.toggle-on />
+                            @else
+                                <x-tt::ico.toggle-off />
+                            @endif
+                        </button>
+                    @endif
                 </div>
             </div>
 
