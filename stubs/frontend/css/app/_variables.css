@@ -1,7 +1,7 @@
 :root {
     /* Colors */
-    --color-light: 248, 249, 250; /* #F8F9FA */
-    --color-light-hover: 211, 212, 213; /* #d3d4d5 */
+    --color-light: 204, 204, 204; /* #CCCCCC */
+    --color-light-hover: 211, 212, 213; /* #D3D4D5 */
 
     --color-dark: 33, 37, 41; /* #212529 */
     --color-dark-hover: 66, 70, 73; /* #424649 */
@@ -25,8 +25,8 @@
     --color-secondary-hover: 92, 99, 106; /* #5c636a */
 
     --color-body: 33, 37, 41; /* #212529 */ /* Еще передается вручную в svg для form-select */
-    --color-body-bg: var(--color-light);
-    --stroke: rgba(var(--color-secondary), 1);
+    --color-body-bg: 248, 249, 250; /* #F8F9FA */
+    --color-stroke: rgba(var(--color-secondary), 1);
     --scrollbar-color: rgba(var(--color-secondary), 1);
 
     /* Sizes */
