@@ -40,7 +40,7 @@
 @stack("modals")
 <!-- Scripts -->
 @livewireScripts
-@vite('resources/js/app.js')
+@vite("resources/js/{$jsFile}")
 @stack("scripts")
 @include("tt::layouts.includes.after-scripts")
 </body>

@@ -6,11 +6,13 @@ use Illuminate\View\Component;
 
 class AppLayout extends Component
 {
-    public $cssFile;
+    public string $cssFile;
+    public string $jsFile;
 
     public function __construct()
     {
         $this->cssFile = config("tailwindcss-theme.appCssFile");
+        $this->jsFile = config("tailwindcss-theme.appJsFile");
     }
 
     /**

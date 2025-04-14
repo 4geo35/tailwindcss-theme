@@ -39,7 +39,7 @@
 @stack("modals")
 <!-- Scripts -->
 @livewireScripts
-@vite('resources/js/admin.js')
+@vite("resources/js/{$jsFile}")
 @stack("scripts")
 </body>
 </html>
