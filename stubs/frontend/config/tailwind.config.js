@@ -111,6 +111,9 @@ export default {
             flex: {
                 '0': '0 0 auto',
             },
+            borderRadius: {
+                'base': 'var(--border-radius)'
+            },
         },
     },
     plugins: [
