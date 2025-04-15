@@ -12,7 +12,7 @@ class AuthLayout extends Component
     public string $title;
     public string $img;
     public string $imgText;
-    public string $route;
+    public string|null $route;
     public string $routeText;
 
     public function __construct(string $route = "home", string $routeText = null, string $title = null, string $img = null, string $imgText = null)
