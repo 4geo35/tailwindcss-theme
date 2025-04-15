@@ -1,6 +1,6 @@
 #### v1.1.12
 
-Исправлены переменные `js` для `layouts`, нужно скопировать `Views` классы компоненты, или дописать в них переменные:
+Исправлены переменные `js` для `layouts`, нужно скопировать `Views` классы компоненты, или дописать в них переменные, если они были переопределены:
     
     php artisan vendor:publish --provider="GIS\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="layout-components" --force
 
