@@ -1,4 +1,7 @@
 <div class="flex flex-col gap-4 my-3">
+    @if ($layout !== "admin")
+        @include("tt::styles-blocks.typography")
+    @endif
     @include("tt::styles-blocks.colors")
     @include("tt::styles-blocks.btns")
     @include("tt::styles-blocks.forms")
