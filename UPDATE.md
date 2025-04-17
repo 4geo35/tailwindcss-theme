@@ -1,3 +1,12 @@
+#### v1.2.0
+
+Изменены переменные css и конфиг tailwind.
+borderRadius перенесен в app.css, добавлены переменные для шрифтов.
+
+Переменные проще заменить командой, а tailwind и app.css лучше сравнить и поправить, что бы не пропали подключения.
+
+    php artisan vendor:publish --provider="GIS\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="variables" --force
+
 #### v1.1.12
 
 Исправлены переменные `js` для `layouts`, нужно скопировать `Views` классы компоненты, или дописать в них переменные, если они были переопределены:

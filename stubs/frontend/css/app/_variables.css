@@ -47,6 +47,27 @@
     --z-modal-backdrop: 1050;
     --z-modal: 1055;
 
+    /* Font Sizes */
+    --h1-size: 3.125rem; /* 50px */
+    --h1-mobile: 3.125rem; /* 36px */
+    --h1-line: 1.1;
+
+    --h2-size: 2.5rem; /* 40px */
+    --h2-mobile: 1.875rem; /* 30px */
+    --h2-line: 1.1;
+
+    --h3-size: 2rem; /* 32px */
+    --h3-mobile: 1.5rem; /* 24px */
+    --h3-line: 1.1;
+
+    --h4-size: 1.5rem; /* 24px */
+    --h4-mobile: 1.25rem; /* 20px */
+    --h4-line: 1.2;
+
+    --h5-size: 1.125rem; /* 18px */
+    --h5-mobile: 1rem; /* 16px */
+    --h5-line: 1.2;
+
     /* Modal */
     --modal-bg: 255, 255, 255;
     --modal-backdrop-bg: var(--color-dark);
