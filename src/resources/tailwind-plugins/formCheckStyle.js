@@ -10,6 +10,7 @@ module.exports = plugin.withOptions(function (options = {}) {
                 flexWrap: 'nowrap',
             },
             '.form-check-input': {
+                flex: '0 0 auto',
                 width: 'var(--check-input-width)',
                 height: 'var(--check-input-width)',
                 marginTop: 'var(--check-input-mt)',
