@@ -7,6 +7,9 @@
 
 @theme {
     --breakpoint-xs: 30rem; /* => @media (min-width: 480px) {...} */
+
+    /* Border radius */
+    --radius-base: var(--border-radius)
 }
 
 @utility container {
