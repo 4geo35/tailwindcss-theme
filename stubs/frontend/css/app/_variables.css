@@ -1,10 +1,10 @@
 :root {
     /* Colors */
-    --color-light: 204, 204, 204; /* #CCCCCC */
-    --color-light-hover: 211, 212, 213; /* #D3D4D5 */
+    --color-light: 226, 226, 226; /* #E2E2E2 */
+    --color-light-hover: 211, 211, 211; /* #D3D3D3 */
 
-    --color-dark: 33, 37, 41; /* #212529 */
-    --color-dark-hover: 66, 70, 73; /* #424649 */
+    --color-dark: 6, 58, 28; /* #063A1C */
+    --color-dark-hover: 0, 74, 31; /* #004A1F */
 
     --color-success: 25, 135, 84; /* #198754 */
     --color-success-hover: 21, 115, 71; /* #157347 */
@@ -18,16 +18,16 @@
     --color-info: 13, 202, 240; /* #0dcaf0 */
     --color-info-hover: 49, 210, 242; /* #31d2f2 */
 
-    --color-primary: 11, 94, 216; /* #0d6efd */
-    --color-primary-hover: 13, 110, 252; /* #0d6efc */
+    --color-primary: 95, 172, 111; /* #5FAC6F */
+    --color-primary-hover: 46, 116, 61; /* #2E743D */
 
     --color-secondary: 108, 117, 125; /* #6c757d */
     --color-secondary-hover: 92, 99, 106; /* #5c636a */
 
-    --color-body: 33, 37, 41; /* #212529 */ /* Еще передается вручную в svg для form-select */
-    --color-body-bg: 248, 249, 250; /* #F8F9FA */
-    --color-stroke: rgba(var(--color-secondary), 1);
-    --scrollbar-color: rgba(var(--color-secondary), 1);
+    --color-body: 51, 51, 51; /* #333333 */ /* Еще передается вручную в svg для form-select */
+    --color-body-bg: 244, 244, 244; /* #F4F4F4 */
+    --color-stroke: 224, 224, 224; /* E0E0E0 */
+    --scrollbar-color: 108, 117, 125;
 
     /* Sizes */
     --indent-width: 1.5rem; /* 24px */
@@ -70,7 +70,7 @@
 
     /* Modal */
     --modal-bg: 255, 255, 255;
-    --modal-backdrop-bg: var(--color-dark);
+    --modal-backdrop-bg: 33, 37, 41; /* #212529 */
     --modal-backdrop-opacity: .5;
 
     --modal-border-width: var(--border-width);
@@ -91,12 +91,12 @@
     --dropdown-bg: #fff;
 
     --dropdown-border-width: var(--border-width);
-    --dropdown-border-color: var(--color-secondary);
+    --dropdown-border-color: 108, 117, 125; /* #6c757d */
     --dropdown-border-radius: var(--border-radius);
 
     /* Cards */
     --card-border-width: var(--border-width);
-    --card-border-color: var(--color-secondary);
+    --card-border-color: 108, 117, 125; /* #6c757d */
     --card-border-radius: var(--border-radius);
     --card-inner-border-radius: calc(var(--card-border-radius) - var(--card-border-width));
     --card-spacer-y: var(--spacer);
@@ -111,7 +111,7 @@
     --card-title-color: var(--color-body);
     --card-subtitle-color: var(--color-body);
     --card-cap-color: var(--color-body);
-    --card-cap-bg: rgba(var(--color-light), 1);
+    --card-cap-bg: 204, 204, 204; /* #F8F9FA */
 
     --card-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 
@@ -122,9 +122,9 @@
 
     --table-head-font-weight: 500;
 
-    --table-border-color: rgba(var(--color-secondary), .4);
+    --table-border-color: rgba(108, 117, 125, .4); /* #6c757d */
     --table-bg: 255, 255, 255;
-    --table-head-bg: rgba(var(--color-light), 1);
+    --table-head-bg: rgba(204, 204, 204, 1); /* #F8F9FA */
 
     /* Forms */
     --input-height: 2.5rem; /* 40px */
@@ -159,7 +159,7 @@
     --input-border-color: 224, 224, 224; /* #E0E0E0 */
     --input-focus-bg: var(--input-bg);
     --input-focus-border-color: var(--color-primary);
-    --input-placeholder-color: var(--color-secondary);
+    --input-placeholder-color: 108, 117, 125; /* #6c757d */
     --input-disabled-bg: 233, 236, 239; /* #e9ecef */
 
     --select-indicator-color: var(--color-body);
