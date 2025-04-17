@@ -74,7 +74,7 @@
     --modal-backdrop-opacity: .5;
 
     --modal-border-width: var(--border-width);
-    --modal-border-color: transparent;
+    --modal-border-color: rgba(204, 204, 204, 1);
     --modal-border-radius: var(--border-radius);
     --modal-inner-border-radius: calc(var(--modal-border-radius) - var(--modal-border-width));
 
