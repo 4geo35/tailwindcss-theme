@@ -1,4 +1,4 @@
-@props(["tree" => [], "child" => false])
+@props(["tree" => [], "child" => false, "showUrl" => null])
 <ul class="{{ $child ? 'ml-indent-half border-l border-dashed pl-indent-half pt-indent-half' : '' }}" drag-category-parent>
     @foreach($tree as $key => $item)
         <li class="pb-indent-half" drag-category-item="{{ $item['id'] }}"
@@ -23,10 +23,12 @@
                             wire:click="showCreate({{ $item['id'] }})">
                         <x-tt::ico.circle-plus />
                     </button>
-                    <a href="{{ route('admin.service-categories.show', ['category' => $item['slug']]) }}"
-                       class="btn btn-primary btn-sm px-btn-x-ico rounded-none">
-                        <x-tt::ico.eye width="18" height="18" />
-                    </a>
+                    @if ($showUrl && \Illuminate\Support\Facades\Route::has($showUrl))
+                        <a href="{{ route($showUrl, ['category' => $item['slug']]) }}"
+                           class="btn btn-primary btn-sm px-btn-x-ico rounded-none">
+                            <x-tt::ico.eye width="18" height="18" />
+                        </a>
+                    @endif
                     @if (key_exists("imageUrl", $item) && $item["imageUrl"])
                         <a href="{{ $item["imageUrl"] }}" class="btn btn-primary btn-sm px-btn-x-ico rounded-none" target="_blank">
                             <x-tt::ico.image width="18" height="18" />
