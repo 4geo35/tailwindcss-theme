@@ -3,7 +3,7 @@
     "description": "Based on TailwindCSS and Livewire theme for laravel",
     "type": "library",
     "require": {
-        "laravel/framework": "^11.0",
+        "laravel/framework": "^11.0|^12.0",
         "livewire/livewire": "^3.0"
     },
     "license": "MIT",
