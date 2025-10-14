@@ -37,6 +37,7 @@
 @include("tt::layouts.includes.main-content")
 @include("tt::layouts.includes.after-content")
 
+@includeIf("pp::web.cookies.component")
 @stack("modals")
 <!-- Scripts -->
 @livewireScripts
