@@ -16,7 +16,7 @@ module.exports = plugin.withOptions(function (options = {}) {
                 marginTop: 'var(--check-input-mt)',
 
                 appearance: 'none',
-                backgroundColor: 'var(--input-bg)',
+                backgroundColor: 'rgba(var(--input-bg), 1)',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 backgroundSize: 'contain',

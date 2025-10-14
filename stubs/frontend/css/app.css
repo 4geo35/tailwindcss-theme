@@ -46,5 +46,5 @@
     @variant md {  padding-inline: 2.25rem; /* 36px */  }
     @variant lg {  padding-inline: 2.75rem; /* 44px */  }
     @variant xl {  padding-inline: 3.25rem; /* 52px */  }
-    @variant 2xl {  padding-inline: 3rem; /* 64px */  }
+    @variant 2xl {  padding-inline: 3rem; /* 48px */  }
 }
