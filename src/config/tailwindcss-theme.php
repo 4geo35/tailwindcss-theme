@@ -17,4 +17,6 @@ return [
     "baseAppHtmlLayoutClasses" => "text-body font-normal bg-body-bg scroll-smooth",
 
     "customUserChangePasswordComponent" => null,
+
+    "checkTextOrganization" => "",
 ];
