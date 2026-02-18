@@ -62,7 +62,7 @@ module.exports = plugin.withOptions(function (options = {}) {
                     opacity: 1
                 },
 
-                '&:disabled': {
+                '&:disabled, &:read-only': {
                     backgroundColor: "rgba(var(--input-disabled-bg), 1)",
                     opacity: 1
                 },
