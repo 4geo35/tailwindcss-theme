@@ -18,10 +18,12 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        $this->configurePublishing();
-
         $this->loadViewsFrom(__DIR__ . "/resources/views", "tt");
         $this->loadRoutesFrom(__DIR__ . "/routes/web.php");
+
+        $this->configurePublishing();
+
+        $this->addLivewireComponents();
     }
 
     protected function addLivewireComponents(): void
