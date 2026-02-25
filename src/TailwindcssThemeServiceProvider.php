@@ -10,17 +10,22 @@ use Livewire\Livewire;
 
 class TailwindcssThemeServiceProvider extends ServiceProvider
 {
-    /**
-     * @return void
-     */
+    public function register(): void
+    {
+        $this->mergeConfigFrom(__DIR__ . "/config/tailwindcss-theme.php", "tailwindcss-theme");
+        $this->loadJsonTranslationsFrom(__DIR__ . "/lang");
+    }
+
     public function boot(): void
     {
         $this->configurePublishing();
 
-        // Подключение страниц
         $this->loadViewsFrom(__DIR__ . "/resources/views", "tt");
+        $this->loadRoutesFrom(__DIR__ . "/routes/web.php");
+    }
 
-        // Livewire
+    protected function addLivewireComponents(): void
+    {
         Livewire::component("tt-example-form", ExampleModalsWire::class);
         Livewire::component("tt-example-pagination", ExampleUserPaginationWire::class);
         Livewire::component(
@@ -29,28 +34,6 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
         );
     }
 
-    /**
-     * @return void
-     */
-    public function register(): void
-    {
-        // Подключение конфигурации
-        $this->mergeConfigFrom(
-            __DIR__ . "/config/tailwindcss-theme.php", "tailwindcss-theme"
-        );
-
-        // Подключение routes
-        $this->loadRoutesFrom(__DIR__ . "/routes/web.php");
-
-        // Подключение переводов
-        $this->loadJsonTranslationsFrom(__DIR__ . "/lang");
-    }
-
-    /**
-     * Конфигурация публикуемых файлов
-     *
-     * @return void
-     */
     protected function configurePublishing(): void
     {
         if ($this->app->runningInConsole()) {
