@@ -40,6 +40,7 @@
     --border-width: 1px;
     --border-radius: .625rem; /* 10px */
     --spacer: var(--indent-sm); /* 16px */
+    --sticky-spacer: var(--indent-half); /* 12px */
 
     --z-dropdown: 1000;
     --z-sticky: 1020;

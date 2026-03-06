@@ -83,8 +83,10 @@ export default {
                 'indent-half': 'var(--indent-half)',
                 'indent-double': 'var(--indent-double)',
 
-                'spacer': 'var(--indent-spacer)',
+                'spacer': 'var(--spacer)',
                 'modal-aside': 'var(--modal-aside-width)',
+
+                'sticky': 'var(--sticky-spacer)'
             },
             zIndex: {
                 'dropdown': 'var(--z-dropdown)',

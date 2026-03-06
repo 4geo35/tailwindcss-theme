@@ -1,3 +1,10 @@
+#### v1.3.14
+
+Изменения в `tailwind.config.js` и `_variables.css`:
+
+- Поправлена переменная `spacer`, для применения поменять `var(--indent-spacer)` на `var(--spacer)`
+- Добавлена переменная для размера отступа `sticky`, для применения добавить `'sticky': 'var(--sticky-spacer)'`, после `spacer` и в `_variables.css` добавить `--sticky-spacer: var(--indent-half);`
+
 #### v1.3.1 && v1.3.2
 
 Обновлен размер шрифта для h4 и h1
