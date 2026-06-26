@@ -1,3 +1,10 @@
+#### v1.3.17
+
+Заменены изображения и размеры элементов изменены пож них
+
+    php artisan vendor:publish --provider="GIS\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="images" --force  
+    npm run build
+
 #### v1.3.14
 
 Изменения в `tailwind.config.js` и `_variables.css`:

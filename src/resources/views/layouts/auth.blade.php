@@ -14,14 +14,13 @@
 </head>
 <body>
 <div class="flex flex-wrap w-full min-h-screen">
-    <div class="absolute top-4 left-14 right-14 h-auto row items-end">
-        <div class="col w-1/3 xs:w-1/2">
+    <div class="absolute top-4 left-14 right-14 h-auto row sm:items-end">
+        <div class="col w-full sm:w-1/2">
             <a href="/">
-                <img src="{{ asset("imgs/gis/logo.png") }}" alt="Aweram" class="h-auto w-32 hidden xs:inline-block">
-                <img src="{{ asset("imgs/gis/logo-short.png") }}" alt="Aweram" class="h-auto w-6 xs:hidden">
+                <img src="{{ asset("imgs/gis/logo.png") }}" alt="ГИС4БИЗ" class="h-auto w-50 xs:inline-block">
             </a>
         </div>
-        <div class="col w-2/3 xs:w-1/2 text-right">
+        <div class="col w-full sm:w-1/2 sm:text-right mt-indent-half sm:mt-0">
             @isset($route)
                 <a class="text-sm font-light hover:text-primary lowercase" href="{{ route($route) }}">
                     < {{ $routeText }}
