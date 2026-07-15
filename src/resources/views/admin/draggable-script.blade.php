@@ -1,15 +1,20 @@
+@props(["postfix" => ""])
+@php
+    if (! empty($postfix)) { $camelCase = Str::ucfirst(Str::camel($postfix)); }
+    else { $camelCase = ""; }
+@endphp
 @push("scripts")
-    @if (! $hasSearch)
+    @if ((isset($hasSearch) && ! $hasSearch) || (! isset($hasSearch)))
         <script type="application/javascript">
             (function () {
-                makeDraggable()
-                document.addEventListener("update-list", function () {
-                    setTimeout(() => makeDraggable(), 500)
+                makeDraggable{{ $camelCase }}()
+                document.addEventListener("update-list{{ $postfix }}", function () {
+                    setTimeout(() => makeDraggable{{ $camelCase }}(), 500)
                 })
             })()
 
-            function makeDraggable() {
-                let root = document.querySelector("[drag-root]")
+            function makeDraggable{{ $camelCase }}() {
+                let root = document.querySelector("[drag-root{{ $postfix }}]")
                 if (! root) return
 
                 root.querySelectorAll("[drag-grab]").forEach(el => {
