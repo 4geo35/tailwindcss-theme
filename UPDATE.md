@@ -1,3 +1,10 @@
+#### v1.4.0
+
+Добавлены страницы ошибок
+
+    php artisan vendor:publish --provider="GIS\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="images" --force
+    php artisan vendor:publish --provider="GIS\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="errors"
+
 #### v1.3.17
 
 Заменены изображения и размеры элементов изменены пож них

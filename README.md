@@ -31,6 +31,10 @@
 
     php artisan vendor:publish --provider="GIS\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="changable"
 
+Для добавления стилизованных страниц ошибок:
+    
+    php artisan vendor:publish --provider="GIS\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="errors"
+
 Для установки пакетов и запуска:
 
     npm install

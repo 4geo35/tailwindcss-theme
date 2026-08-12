@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 if (config("tailwindcss-theme.showStylesPage")) {
     Route::group([
@@ -16,3 +17,9 @@ if (config("tailwindcss-theme.showStylesPage")) {
         })->name("styles");
     });
 }
+
+Route::fallback(function () {
+    if (View::exists("errors.404")) {
+        return response()->view("errors.404", [], 404);
+    } else { abort(404); }
+})->middleware("web");

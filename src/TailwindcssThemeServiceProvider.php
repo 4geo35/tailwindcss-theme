@@ -73,6 +73,11 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__ . "/imgs" => public_path("imgs/gis"),
             ], "images");
+
+            // Публикация страниц ошибок
+            $this->publishes([
+                __DIR__ . "/../stubs/errors" => resource_path("views/errors")
+            ], "errors");
         }
     }
 }
