@@ -1,3 +1,7 @@
+#### v1.4.1
+
+В файле `tailwind.admin.config.js` исправлено значение `'spacer': 'var(--indent-spacer)',` на `'spacer': 'var(--spacer)',`
+
 #### v1.4.0
 
 Добавлены страницы ошибок
