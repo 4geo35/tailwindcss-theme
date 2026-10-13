@@ -39,7 +39,7 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
     protected function configurePublishing(): void
     {
         if ($this->app->runningInConsole()) {
-            // Публикация layouts конмонентов.
+            // Публикация layouts компонентов.
             $this->publishes([
                 __DIR__ . "/../stubs/layout/AdminLayout.php" => app_path("View/Components/AdminLayout.php"),
                 __DIR__ . "/../stubs/layout/AppLayout.php" => app_path("View/Components/AppLayout.php"),

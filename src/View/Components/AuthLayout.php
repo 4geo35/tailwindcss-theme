@@ -4,6 +4,7 @@ namespace GIS\TailwindcssTheme\View\Components;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\View\Component;
+use Illuminate\View\View;
 
 class AuthLayout extends Component
 {
@@ -29,9 +30,9 @@ class AuthLayout extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
+     * @return View
      */
-    public function render()
+    public function render(): View
     {
         return view('tt::layouts.auth');
     }
